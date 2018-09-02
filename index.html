@@ -5,15 +5,20 @@
         <title>Weather API</title>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="weatherAPI.js"></script>
+        <link href='style.css' rel='stylesheet' type='text/css'>
     </head>
     <body>
-        <p id="data"></p>
-
-        <ul>
-            <li id="city"></li>
-            <li id="weatherType"></li>
-            <li id="fTemp"></li>
-            <li id="windSpeed"></li>
-        </ul>
+        <div class="banner banner4">
+            <h1 class="banners"> by Ivan Savchuk</h1>
+        </div>
+        <div class="text-center">
+            <h1>Show the Local Weather</h1>
+            <ul class="list-unstyled">
+                <li class="btn btn-default" id="city"></li>
+                <li class="btn btn-default" id="weatherType"></li>
+                <li class="btn btn-default" id="fTemp"></li>
+                <li class="btn btn-default" id="windSpeed"></li>
+            </ul>
+        </div>
     </body>
 </html>
