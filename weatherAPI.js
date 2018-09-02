@@ -25,20 +25,20 @@ $(document).ready(function() {
         var windSpeed = data.wind.speed;
         var city = data.name;
 
-        fTemp = (kTemp)*(9/5)-459.67;
-        cTemp = kTemp-273;
+        fTemp = (kTemp*(9/5)-459.67).toFixed(1);
+        cTemp = (kTemp-273).toFixed(1);
 
         console.log(city);
         $('#city').html(city);
         $('#weatherType').html(weatherType);
-        $('#fTemp').html(fTemp);
+        $('#fTemp').html(fTemp + " &#8457;");
         $('#fTemp').click(function(){
             
             if(tempSwap === false) {
-                $('#fTemp').html(cTemp);
+                $('#fTemp').html(fTemp + " &#8457;");
                 tempSwap = true;
             } else {
-                $('#fTemp').html(fTemp);
+                $('#fTemp').html(cTemp + " &#8451;");
                 tempSwap = false;
             }
         });
